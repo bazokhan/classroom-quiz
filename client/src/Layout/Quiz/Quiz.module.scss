@@ -1,0 +1,37 @@
+.quizContainer {
+	padding: 10px;
+	max-width: 960px;
+	margin: 0 auto;
+
+	.quizName {
+		font-size: 1.5em;
+		text-align: center;
+		min-width: 100%;
+	}
+
+	.quizAuthor {
+		padding: 15px;
+	}
+
+	.navigationButtons {
+		min-width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.navButton {
+			border: none;
+			padding: 10px;
+			background: none;
+			background-color: lightgreen;
+			color: green;
+			border-radius: 5px;
+			cursor: pointer;
+			min-width: 80px;
+			transition: all 0.2s;
+
+			&:hover {
+				background-color: greenyellow;
+			}
+		}
+	}
+}

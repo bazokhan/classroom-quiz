@@ -1,0 +1,14 @@
+type Test {
+    id: ID!
+    name: String!
+    author: User!
+    questions: [Question!]!
+    presenting: Boolean!
+    open: Boolean!
+	results: Result!
+}
+
+type Query {
+    tests: [Test!]!
+    test(id: ID!): Test
+}

@@ -1,0 +1,11 @@
+type Result {
+    id: ID!
+	test: Test!
+    totalSubmits: Int!
+	questionsCorrect: [Int!]!
+}
+
+type Query {
+    results: [Result!]!
+    result(id: ID!): Result
+}
