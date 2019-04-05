@@ -1,0 +1,17 @@
+{
+  "name": "calc-app-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mohamed Elbaz",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "graphql-yoga": "^1.17.4",
+    "merge-graphql-schemas": "^1.5.8"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "nodemon": "^1.18.10"
+  }
+}

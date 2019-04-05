@@ -1,0 +1,21 @@
+{
+  "name": "calc-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mohamed Elbaz",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "setup:server": "cd server && yarn",
+    "setup:client": "cd client && yarn",
+    "setup": "yarn && yarn setup:server && yarn setup:client",
+    "serve:database": "json-server mock/database.json",
+    "serve:server": "env-cmd ./server/.env nodemon server/index.js",
+    "serve:client": "cd client && yarn start",
+    "serve": "concurrently \"yarn:serve:*\" -k"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "concurrently": "^4.1.0"
+  }
+}
