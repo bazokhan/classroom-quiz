@@ -24,10 +24,9 @@ module.exports = {
       return allQuestions.filter(question => questionsId.includes(question.id))
     },
 
-    async results({ resultId }, args) {
-      return await axios
-        .get(`${dbUrl}/results/${resultId}`)
-        .then(res => res.data)
+    async results({ id }, args) {
+      const allResults = await axios.get(`${dbUrl}/results`).then(res => res.data)
+      return allResults.filter(result => result.testId === id)
     }
   }
 }

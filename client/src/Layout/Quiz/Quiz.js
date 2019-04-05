@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import styles from './Quiz.module.scss'
 import getQuiz from './gql/getQuiz.gql'
-import { Query } from 'react-apollo'
+import submitQuiz from './gql/submitQuiz.gql'
+import { Query, Mutation } from 'react-apollo'
 import Question from '../Question'
 
 const Quiz = ({ id }) => {
@@ -12,6 +13,7 @@ const Quiz = ({ id }) => {
     if (nextQuestion < 0) nextQuestion = noOfQuestions - 1
     setCurrentQuestion(nextQuestion)
   }
+  const quizId = id
   return (
     <Query query={getQuiz} variables={{ id }}>
       {({ data }) => {
@@ -38,6 +40,24 @@ const Quiz = ({ id }) => {
                     >
                       Previous
                     </button>
+                    <Mutation mutation={submitQuiz}>
+                      {(addResult, { data }) => (
+                        <button
+                          className={styles.navButton}
+                          onClick={() =>
+                            addResult({
+                              variables: {
+                                testId: quizId,
+                                answers: [1, 2, 3, 4, 5, 6]
+                              }
+                            })
+                          }
+                        >
+                          Submit
+                        </button>
+                      )}
+                    </Mutation>
+
                     <button
                       className={styles.navButton}
                       onClick={() => handleCurrentQuestion(1, questions.length)}

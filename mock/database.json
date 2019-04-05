@@ -11,34 +11,89 @@
       "id": "t001",
       "name": "Pretest",
       "authorId": "123",
-      "questionsId": ["q001", "q002", "q003", "q004"],
+      "questionsId": [
+        "q001",
+        "q002",
+        "q003",
+        "q004"
+      ],
       "presenting": false,
-      "open": true,
-      "resultId": "r001"
+      "open": true
     }
   ],
-  "results": [{
-    "id": "r001",
-    "testId": "t001",
-    "totalSubmits": 0,
-    "questionsCorrect": []
-  }],
+  "results": [
+    {
+      "id": "r001",
+      "testId": "t001",
+      "answers": [
+        1
+      ]
+    },
+    {
+      "testId": "t001",
+      "answers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "id": "RCMJVFe"
+    },
+    {
+      "testId": "t001",
+      "answers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "id": "zkPp9gM"
+    },
+    {
+      "testId": "t001",
+      "answers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "id": "mlzKKrH"
+    }
+  ],
   "questions": [
     {
       "id": "q001",
       "type": "MCQ",
       "prologue": "26 years old male, known case of nasopharngeal carcinoma, presented with rapidly progressing red swollen neck, sever pain, diarrhea and fever.",
       "main": "What is the appropriate management?",
-      "answerId": ["a0001", "a0002", "a0003", "a0004"],
+      "answerId": [
+        "a0001",
+        "a0002",
+        "a0003",
+        "a0004"
+      ],
       "correctAnswerId": "a0003",
-      "qImgs": ["m0001"]
+      "qImgs": [
+        "m0001"
+      ]
     },
     {
       "id": "q002",
       "type": "MCQ",
       "prologue": "30 years old male presented with leg weakness.",
       "main": "What is true regarding diagnosis?",
-      "answerId": ["a0005", "a0006", "a0007", "a0008"],
+      "answerId": [
+        "a0005",
+        "a0006",
+        "a0007",
+        "a0008"
+      ],
       "correctAnswerId": "a0007",
       "qImgs": []
     },
@@ -47,7 +102,12 @@
       "type": "MCQ",
       "prologue": null,
       "main": "what is the most likely diagnosis?",
-      "answerId": ["a0009", "a0010", "a0011", "a0012"],
+      "answerId": [
+        "a0009",
+        "a0010",
+        "a0011",
+        "a0012"
+      ],
       "correctAnswerId": "a0009",
       "qImgs": []
     },
@@ -56,7 +116,12 @@
       "type": "MCQ",
       "prologue": "66 years old female presented with large, painless, non tender mass in the parotid area.",
       "main": "What is the least likely appearance in diffusion weighted qImgs?",
-      "answerId": ["a0013", "a0014", "a0015", "a0016"],
+      "answerId": [
+        "a0013",
+        "a0014",
+        "a0015",
+        "a0016"
+      ],
       "correctAnswerId": "a0016",
       "qImgs": []
     },
@@ -65,7 +130,12 @@
       "type": "MCQ",
       "prologue": null,
       "main": "Direct signs of maxillary nerve obliteration includes all of the following except:",
-      "answerId": ["a0017", "a0018", "a0019", "a0020"],
+      "answerId": [
+        "a0017",
+        "a0018",
+        "a0019",
+        "a0020"
+      ],
       "correctAnswerId": "a0020",
       "qImgs": []
     },
@@ -74,7 +144,12 @@
       "type": "MCQ",
       "prologue": "15 years old female presented with nasal obstructive symptoms and epistaxis.",
       "main": "What is the least likely diagnosis?",
-      "answerId": ["a0021", "a0022", "a0023", "a0024"],
+      "answerId": [
+        "a0021",
+        "a0022",
+        "a0023",
+        "a0024"
+      ],
       "correctAnswerId": "a0024",
       "qImgs": []
     },
@@ -83,7 +158,12 @@
       "type": "MCQ",
       "prologue": "40 years old male with fascial deformity. Bone scan shows uptake in right 2nd and 4th ribs.",
       "main": "What is the most likely additional finding expected in this patient?",
-      "answerId": ["a0025", "a0026", "a0027", "a0028"],
+      "answerId": [
+        "a0025",
+        "a0026",
+        "a0027",
+        "a0028"
+      ],
       "correctAnswerId": "a0026",
       "qImgs": []
     },
@@ -92,12 +172,17 @@
       "type": "MCQ",
       "prologue": "A patient presented with left sided proptosis. A CT reveals low density mass causing expansion of the frontal sinus. There is focal thinning of the bony walls, dehiscence of the orbital roof and mass effect on the globe. There is no enhancement with IV contrast medium.",
       "main": "What is the most likely diagnosis?",
-      "answerId": ["a0029", "a0030", "a0031", "a0032", "a0033"],
+      "answerId": [
+        "a0029",
+        "a0030",
+        "a0031",
+        "a0032",
+        "a0033"
+      ],
       "correctAnswerId": "a0032",
       "qImgs": []
     }
   ],
-
   "answers": [
     {
       "id": "a0001",
@@ -232,7 +317,6 @@
       "body": "Nasopharyngeal carcinoma"
     }
   ],
-
   "qImgs": [
     {
       "id": "m0001",
