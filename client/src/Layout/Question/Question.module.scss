@@ -7,9 +7,11 @@
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: start;
+	margin: 15px 10px;
 
 	@media (max-width: 670px) {
-		padding: 5px;
+		padding: 10px;
+		margin: 10px 5px;
 	}
 
 	.title {
@@ -19,6 +21,7 @@
 		border-radius: 5px;
 		border-bottom: solid 1px darkblue;
 		width: 100%;
+		font-weight: 500;
 	}
 
 	.imageContainer {
@@ -67,5 +70,14 @@
 				border-bottom: solid 1px #aaa
 			}
 		}
+	}
+
+	.correctAnswer {
+		font-size: 1.2em;
+		font-weight: 500;
+		color: green;
+		background-color: greenyellow;
+		padding: 15px;
+		border-radius: 5px;
 	}
 }

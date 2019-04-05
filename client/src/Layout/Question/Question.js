@@ -13,13 +13,13 @@ const Question = ({
   const [isActive, toggleActive] = useState(false)
   return (
     <div className={styles.container}>
-      <div className={styles.title}>Question No. {index}</div>
+      <div className={styles.title}>Question No. {index+1}</div>
       <p className={styles.main}>{prologue}</p>
       {qImgs &&
         qImgs.map((img, index) => {
           return (
             <div key={img.id} className={styles.imageContainer}>
-              <div className={styles.imageTitle}>Image No. {index}</div>
+              <div className={styles.imageTitle}>Image No. {index+1}</div>
               <p>{img.comment}</p>
             </div>
           )
@@ -39,7 +39,7 @@ const Question = ({
             )
           })}
       </ul>
-      <h2>The Correct Answer Is: {correctAnswer.body}</h2>
+      <div className={styles.correctAnswer}>The Correct Answer Is: {correctAnswer.body}</div>
     </div>
   )
 }
