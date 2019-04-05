@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
+import Question from '../Layout/Question'
 
 const USERS_QUERY = gql`
   query {
@@ -16,12 +17,15 @@ const USERS_QUERY = gql`
 const TEST_QUERY = gql`
   query {
     questions {
+      id
       prologue
       main
       answers {
+        id
         body
       }
       qImgs {
+        id
         comment
       }
       correctAnswer {
@@ -36,38 +40,25 @@ const App = ({ data }) => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello World</p>
+        <p>ClassRoom Quiz</p>
       </header>
 
       <div className="App-intro">
         <ul>
           {data.questions &&
             data.questions.map(
-              ({ prologue, main, answers, qImgs, correctAnswer }, index) => {
-                return (
-                  <div>
-                    <h1>Question No. {index}</h1>
-                    <p>{prologue}</p>
-                    {qImgs &&
-                      qImgs.map((img, index) => {
-                        return (
-                          <div>
-                            <h2>Image No. {index}</h2>
-                            <p>Comment: {img.comment}</p>
-                          </div>
-                        )
-                      })}
-                    <h2>{main}</h2>
-                    <ui>
-                      {answers &&
-                        answers.map(answer => {
-                          return <li>{answer.body}</li>
-                        })}
-                    </ui>
-                    <h2>The Correct Answer Is: {correctAnswer.body}</h2>
-                  </div>
-                )
-              }
+              ({ id, prologue, main, answers, qImgs, correctAnswer }, index) => (
+                <Question
+                  id={id}
+                  key={id}
+                  prologue={prologue}
+                  main={main}
+                  answers={answers}
+                  qImgs={qImgs}
+                  correctAnswer={correctAnswer}
+                  index={index}
+                />
+              )
             )}
         </ul>
       </div>

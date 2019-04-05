@@ -12,6 +12,8 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-intro {
+  background-color: #ccc;
+  max-width: 960px;
+  margin: 0 auto;
 }
