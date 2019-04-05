@@ -1,3 +1,224 @@
 {
-  "users": []
+  "users": [{
+    "id": "123",
+    "firstName": "Mohamed",
+    "lastName": "Elbaz"
+  }],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "MCQ",
+      "prologue": "26 years old male, known case of nasopharngeal carcinoma, presented with rapidly progressing red swollen neck, sever pain, diarrhea and fever.",
+      "main": "What is the appropriate management?",
+      "answerId": ["a0001", "a0002", "a0003", "a0004"],
+      "correctAnswerId": "a0003",
+      "qImgs": ["m0001"]
+    },
+    {
+      "id": "q002",
+      "type": "MCQ",
+      "prologue": "30 years old male presented with leg weakness.",
+      "main": "What is true regarding diagnosis?",
+      "answerId": ["a0005", "a0006", "a0007", "a0008"],
+      "correctAnswerId": "a0007",
+      "qImgs": []
+    },
+    {
+      "id": "q003",
+      "type": "MCQ",
+      "prologue": null,
+      "main": "what is the most likely diagnosis?",
+      "answerId": ["a0009", "a0010", "a0011", "a0012"],
+      "correctAnswerId": "a0009",
+      "qImgs": []
+    },
+    {
+      "id": "q004",
+      "type": "MCQ",
+      "prologue": "66 years old female presented with large, painless, non tender mass in the parotid area.",
+      "main": "What is the least likely appearance in diffusion weighted qImgs?",
+      "answerId": ["a0013", "a0014", "a0015", "a0016"],
+      "correctAnswerId": "a0016",
+      "qImgs": []
+    },
+    {
+      "id": "q005",
+      "type": "MCQ",
+      "prologue": null,
+      "main": "Direct signs of maxillary nerve obliteration includes all of the following except:",
+      "answerId": ["a0017", "a0018", "a0019", "a0020"],
+      "correctAnswerId": "a0020",
+      "qImgs": []
+    },
+    {
+      "id": "q006",
+      "type": "MCQ",
+      "prologue": "15 years old female presented with nasal obstructive symptoms and epistaxis.",
+      "main": "What is the least likely diagnosis?",
+      "answerId": ["a0021", "a0022", "a0023", "a0024"],
+      "correctAnswerId": "a0024",
+      "qImgs": []
+    },
+    {
+      "id": "q007",
+      "type": "MCQ",
+      "prologue": "40 years old male with fascial deformity. Bone scan shows uptake in right 2nd and 4th ribs.",
+      "main": "What is the most likely additional finding expected in this patient?",
+      "answerId": ["a0025", "a0026", "a0027", "a0028"],
+      "correctAnswerId": "a0026",
+      "qImgs": []
+    },
+    {
+      "id": "q008",
+      "type": "MCQ",
+      "prologue": "A patient presented with left sided proptosis. A CT reveals low density mass causing expansion of the frontal sinus. There is focal thinning of the bony walls, dehiscence of the orbital roof and mass effect on the globe. There is no enhancement with IV contrast medium.",
+      "main": "What is the most likely diagnosis?",
+      "answerId": ["a0029", "a0030", "a0031", "a0032", "a0033"],
+      "correctAnswerId": "a0032",
+      "qImgs": []
+    }
+  ],
+
+  "answers": [
+    {
+      "id": "a0001",
+      "body": "Antibiotics and conservative treatment."
+    },
+    {
+      "id": "a0002",
+      "body": "Biopsy and histopathology."
+    },
+    {
+      "id": "a0003",
+      "body": "Urgent surgical fascitotmy."
+    },
+    {
+      "id": "a0004",
+      "body": "Further MRI."
+    },
+    {
+      "id": "a0005",
+      "body": "Usually involves no more than 2 vertebral bodies."
+    },
+    {
+      "id": "a0006",
+      "body": "Thoracic spine are common locations."
+    },
+    {
+      "id": "a0007",
+      "body": "Mild destruction or spared intervertebral disc."
+    },
+    {
+      "id": "a0008",
+      "body": "Para spinal abscess is uncommon."
+    },
+    {
+      "id": "a0009",
+      "body": "Bezold abscess."
+    },
+    {
+      "id": "a0010",
+      "body": "Coalescent mastoiditis."
+    },
+    {
+      "id": "a0011",
+      "body": "Cholesteatoma."
+    },
+    {
+      "id": "a0012",
+      "body": "Ludwig’s angina."
+    },
+    {
+      "id": "a0013",
+      "body": "Low signal in DWI, bright signal in ADC"
+    },
+    {
+      "id": "a0014",
+      "body": "Low signal in DWI, low signal in ADC"
+    },
+    {
+      "id": "a0015",
+      "body": "Bright signal in DWI, bright signal in ADC"
+    },
+    {
+      "id": "a0016",
+      "body": "Bright signal in DWI, low signal in ADC"
+    },
+    {
+      "id": "a0017",
+      "body": "Obliteration of the fat pads in the pre-antral region and pterygopalatine fossa."
+    },
+    {
+      "id": "a0018",
+      "body": "Enlargement and erosion of the infraortibal fissure, infraorbital and round foramina."
+    },
+    {
+      "id": "a0019",
+      "body": "Thickening and enhancement of maxillary nerve in the round foramen."
+    },
+    {
+      "id": "a0020",
+      "body": "Fatty changes of denervated masseter muscle."
+    },
+    {
+      "id": "a0021",
+      "body": "Lymphoma"
+    },
+    {
+      "id": "a0022",
+      "body": "Squamous cell carcinoma"
+    },
+    {
+      "id": "a0023",
+      "body": "Inverted papilloma"
+    },
+    {
+      "id": "a0024",
+      "body": "Juvenile angiofibroma"
+    },
+    {
+      "id": "a0025",
+      "body": "Colonic polyps"
+    },
+    {
+      "id": "a0026",
+      "body": "Acromegaly."
+    },
+    {
+      "id": "a0027",
+      "body": "Seizure attacks"
+    },
+    {
+      "id": "a0028",
+      "body": "Dilated lower esophagus"
+    },
+    {
+      "id": "a0029",
+      "body": "Rhinosinusitis"
+    },
+    {
+      "id": "a0030",
+      "body": "Allergic fungal sinusitis"
+    },
+    {
+      "id": "a0031",
+      "body": "Sinonasal polyposis"
+    },
+    {
+      "id": "a0032",
+      "body": "Mucocele"
+    },
+    {
+      "id": "a0033",
+      "body": "Nasopharyngeal carcinoma"
+    }
+  ],
+
+  "qImgs": [
+    {
+      "id": "m0001",
+      "url": null,
+      "comment": "Further MRI shows non enhancing mass showing homogenous low T1, bright T2 signal intensity."
+    }
+  ]
 }

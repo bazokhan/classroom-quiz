@@ -1,0 +1,9 @@
+type Answer {
+    id: ID!
+    body: String!
+}
+
+type Query {
+    answers: [Answer!]!
+    answer(id: ID!): Answer
+}

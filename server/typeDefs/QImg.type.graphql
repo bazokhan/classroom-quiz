@@ -1,0 +1,10 @@
+type QImg {
+    id: ID!
+    url: String
+    comment: String
+}
+
+type Query {
+    qImgs: [QImg!]!
+    qImg(id: ID!): QImg
+}

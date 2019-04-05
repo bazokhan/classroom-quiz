@@ -7,7 +7,7 @@ const resolvers = require('./resolvers')
 
 const server = new GraphQLServer({ typeDefs, resolvers })
 
-server.express.use('/website', express.static('static'))
+server.express.use('website', express.static('static'))
 
 server
   .start(

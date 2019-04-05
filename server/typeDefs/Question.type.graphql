@@ -1,0 +1,14 @@
+type Question {
+    id: ID!
+    type: String!
+    prologue: String
+    main: String!
+    answers: [Answer!]!
+    correctAnswer: Answer!
+	qImgs: [QImg!]!
+}
+
+type Query {
+    questions: [Question!]!
+    question(id: ID!): Question
+}
