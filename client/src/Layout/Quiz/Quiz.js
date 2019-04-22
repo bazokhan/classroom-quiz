@@ -17,7 +17,7 @@ const Quiz = ({ id }) => {
   return (
     <Query query={getQuiz} variables={{ id }}>
       {({ data }) => {
-        if (data.loading) return <div>Loading</div>
+        if (!data || data.loading) return <div>Loading</div>
         const { test } = data
         if (!test) return <div>Loading</div>
         const { id, name, author, questions } = test
